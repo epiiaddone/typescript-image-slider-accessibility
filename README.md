@@ -21,6 +21,7 @@ Screen reader friendly image slider.
 - Typescript: 5.0.2
 
 ## To Do
+- also style for large images
 
 ## Acknowledgments
 - [How To Create 3 Levels Of React Image Sliders](https://www.youtube.com/watch?v=Kx8XlKRBZx8&ab_channel=WebDevSimplified)

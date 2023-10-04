@@ -21,15 +21,15 @@ export const ImageSlider = ({ images }: ImageSliderProps) => {
 
     function showNextImage() {
         setImageIndex(index => {
-            if (index === images.length) return 0;
+            if (index === images.length - 1) return 0;
             else return index + 1;
         })
     }
 
     return (
-        <section aria-label="Image Slider" style={{ width: "100%", height: "100%", position: "relative" }}>
+        <section aria-label="Image Slider" className="img-slider">
             <a href="#after-image-slider-controls" className="skip-link">Skip Image Slider Controls</a>
-            <div style={{ width: "100%", height: "100%", display: "flex" }}>
+            <div className="img-slider--carosel">
                 {images.map(({ url, alt }, index) => (//load all images to page so no loading during scrolling
                     <img
                         key={url}
@@ -57,14 +57,7 @@ export const ImageSlider = ({ images }: ImageSliderProps) => {
             >
                 <ArrowBigRight aria-hidden />
             </button>
-            <div style={{
-                position: "absolute",
-                bottom: ".5rem",
-                left: "50%",
-                translate: "-50%",
-                display: "flex",
-                gap: "0.25rem"
-            }}>
+            <div className="image-slider--btn-container">
                 {images.map((_, index) => (
                     <button
                         key={index}

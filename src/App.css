@@ -3,3 +3,8 @@
 *::after {
   box-sizing: border-box;
 }
+
+.container {
+  width: 140px;
+  border: 1px solid red;
+}

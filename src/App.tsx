@@ -1,3 +1,5 @@
+import "./App.css";
+
 import { ImageSlider } from "./ImageSlider"
 import pok1 from "./images/pok1.png"
 import pok2 from "./images/pok2.png"
@@ -18,9 +20,8 @@ function App() {
 
 
   return (
-    <div style={{ maxWidth: "1000px", width: "100%", aspectRatio: "8 / 9", margin: "0 auto" }}>
+    <div className="container">
       <ImageSlider images={IMAGES} />
-      <a href="/" style={{ fontSize: "2rem" }}>Link</a>
     </div>
   )
 }
